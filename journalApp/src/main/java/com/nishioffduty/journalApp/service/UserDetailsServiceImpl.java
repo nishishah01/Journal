@@ -1,7 +1,7 @@
-package com.nishioffduty.service;
+package com.nishioffduty.journalApp.service;
 
-import com.nishioffduty.entity.User;
-import com.nishioffduty.repository.UserRepository;
+import com.nishioffduty.journalApp.entity.User;
+import com.nishioffduty.journalApp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

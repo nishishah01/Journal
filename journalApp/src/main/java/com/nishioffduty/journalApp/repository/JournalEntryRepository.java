@@ -1,6 +1,6 @@
-package com.nishioffduty.repository;
+package com.nishioffduty.journalApp.repository;
 
-import com.nishioffduty.entity.JournalEntry;
+import com.nishioffduty.journalApp.entity.JournalEntry;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 

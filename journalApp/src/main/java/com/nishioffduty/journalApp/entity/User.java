@@ -1,9 +1,6 @@
-package com.nishioffduty.entity;
+package com.nishioffduty.journalApp.entity;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NonNull;
-import lombok.ToString;
+import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -20,6 +17,7 @@ import java.util.List;
 @ToString
 @EqualsAndHashCode
 @Data //THIS WILL INCLUDE EVERYTHING: GETTERS SETTERS ALLARGS,NOARGS
+@Builder
 @Document(collection = "user")
 public class User {
     @Id

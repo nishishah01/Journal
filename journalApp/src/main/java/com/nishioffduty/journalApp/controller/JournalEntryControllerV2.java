@@ -1,8 +1,8 @@
-package com.nishioffduty.controller;
-import com.nishioffduty.entity.JournalEntry;
-import com.nishioffduty.entity.User;
-import com.nishioffduty.service.JournalEntryService;
-import com.nishioffduty.service.UserService;
+package com.nishioffduty.journalApp.controller;
+import com.nishioffduty.journalApp.entity.JournalEntry;
+import com.nishioffduty.journalApp.entity.User;
+import com.nishioffduty.journalApp.service.JournalEntryService;
+import com.nishioffduty.journalApp.service.UserService;
 import lombok.Data;
 import org.apache.coyote.Request;
 import org.bson.types.ObjectId;

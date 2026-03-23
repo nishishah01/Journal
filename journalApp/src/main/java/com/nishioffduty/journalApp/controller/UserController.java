@@ -1,10 +1,10 @@
-package com.nishioffduty.controller;
+package com.nishioffduty.journalApp.controller;
 
-import com.nishioffduty.entity.JournalEntry;
-import com.nishioffduty.entity.User;
-import com.nishioffduty.repository.UserRepository;
-import com.nishioffduty.service.JournalEntryService;
-import com.nishioffduty.service.UserService;
+import com.nishioffduty.journalApp.entity.JournalEntry;
+import com.nishioffduty.journalApp.entity.User;
+import com.nishioffduty.journalApp.repository.UserRepository;
+import com.nishioffduty.journalApp.service.JournalEntryService;
+import com.nishioffduty.journalApp.service.UserService;
 import lombok.Data;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;

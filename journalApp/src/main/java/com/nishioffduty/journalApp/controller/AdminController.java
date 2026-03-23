@@ -1,7 +1,7 @@
-package com.nishioffduty.controller;
+package com.nishioffduty.journalApp.controller;
 
-import com.nishioffduty.entity.User;
-import com.nishioffduty.service.UserService;
+import com.nishioffduty.journalApp.entity.User;
+import com.nishioffduty.journalApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,8 +26,10 @@ public class AdminController {
     }
 
     @PostMapping("/create-admin-user")
-    public void createUser(@RequestBody User user){
+    public ResponseEntity<?>  createUser(@RequestBody User user){
     userService.saveAdmin(user);
+    return new ResponseEntity<>("Admin created", HttpStatus.OK);
+
     }
 
 }

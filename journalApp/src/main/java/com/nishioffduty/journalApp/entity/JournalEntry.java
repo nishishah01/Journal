@@ -1,4 +1,4 @@
-package com.nishioffduty.entity;
+package com.nishioffduty.journalApp.entity;
 
 import lombok.*;
 import org.bson.types.ObjectId;

@@ -1,9 +1,11 @@
-package com.nishioffduty.service;
+package com.nishioffduty.journalApp.service;
 
-import com.nishioffduty.entity.JournalEntry;
-import com.nishioffduty.entity.User;
-import com.nishioffduty.repository.JournalEntryRepository;
+import com.nishioffduty.journalApp.entity.JournalEntry;
+import com.nishioffduty.journalApp.entity.User;
+import com.nishioffduty.journalApp.repository.JournalEntryRepository;
 import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,6 +21,10 @@ public class JournalEntryService {
     @Autowired
     private UserService userService;
 
+//    private static final Logger logger= LoggerFactory.getLogger(JournalEntryService.class);
+//    //LoggerFactory is a utility class
+
+
     @Transactional
     public void saveEntry(JournalEntry journalEntry, String userName){
         try{
@@ -29,7 +35,7 @@ public class JournalEntryService {
             userService.saveEntry(user);
         }
         catch(Exception e){
-            System.out.println(e);
+//            logger.info("hahahaha");
             throw new RuntimeException("An error occured while saving the entry",e);
         }
     }
