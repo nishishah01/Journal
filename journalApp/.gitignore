@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+*.yml
+*.yaml
+
+# Ignore log files
+*.log
+
+# Ignore logback config if needed (optional)
+logback.xml

@@ -4,6 +4,7 @@ import com.nishioffduty.journalApp.entity.JournalEntry;
 import com.nishioffduty.journalApp.entity.User;
 import com.nishioffduty.journalApp.repository.JournalEntryRepository;
 import com.nishioffduty.journalApp.repository.UserRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.bson.types.ObjectId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
+@Slf4j //IF WE USE THIS, we dont need to create instances again and again
 public class UserService {
 
     @Autowired
@@ -37,6 +39,7 @@ public class UserService {
             return true;
 
         } catch (Exception e) {
+            log.error("Error occured for:{}", user.getUserName(),e);
             logger.info("hahaha");
             return false;
         }

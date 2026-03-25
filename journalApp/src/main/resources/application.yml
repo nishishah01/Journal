@@ -17,4 +17,10 @@
 #    context-path: /journal
 spring:
   profiles:
-    active: prod
+    active: dev
+
+logging:
+  level:
+    com:
+      nishioffduty:
+        journalApp: DEBUG
