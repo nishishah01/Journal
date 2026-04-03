@@ -19,12 +19,16 @@ import java.util.List;
 @Data //THIS WILL INCLUDE EVERYTHING: GETTERS SETTERS ALLARGS,NOARGS
 @Builder
 @Document(collection = "user")
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     private ObjectId id;
     @Indexed(unique = true)
     @NonNull
     private String userName;
+    private String email;
+    private boolean sentimentAnalysis;
     @NonNull
     private String password;
     @DBRef

@@ -16,11 +16,31 @@
 #  servlet:
 #    context-path: /journal
 spring:
+  data:
+    redis:
+      host: redis-15641.c212.ap-south-1-1.ec2.redns.redis-cloud.com
+      port: 15641
+      password: MpPDltEYMRc2mGEc6czgbyw38zy853Bk
   profiles:
     active: dev
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nishishah0104@gmail.com
+    password: rxxl gign ddba lxmx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 logging:
   level:
     com:
       nishioffduty:
         journalApp: DEBUG
+
+weather:
+  api:
+    key: b7a3896af8ad1b781078710ddf840891
